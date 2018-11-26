@@ -1,8 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React, { Component }  from 'react';
+import {render} from 'react-dom';
+
+global.requestAnimationFrme = function(callback) {
+    setTimeout(callback, 0);
+};
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+console.log("degug from test");
 });
